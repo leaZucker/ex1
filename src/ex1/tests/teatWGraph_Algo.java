@@ -1,5 +1,6 @@
+package ex1.tests;
 
-import ex1.*;
+import ex1.src.*;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
@@ -14,7 +15,7 @@ public class teatWGraph_Algo extends teatWGraph_SD {
 
     @Test
     void WgraphCpoy(){
-        weighted_graph g = graph_creator(10,9,1);
+        weighted_graph g = teatWGraph_SD.graph_creator(10,9,1);
         ga = new WGraph_Algo();
         ga.init(g);
         weighted_graph copy_ga = ga.copy();
@@ -30,7 +31,7 @@ public class teatWGraph_Algo extends teatWGraph_SD {
 
     @Test
     void WgraphConnected10() {
-        weighted_graph g = graph_creator(10,30,1);
+        weighted_graph g = teatWGraph_SD.graph_creator(10,30,1);
         ga = new WGraph_Algo();
         ga.init(g);
         weighted_graph g_c = ga.copy();
@@ -45,7 +46,7 @@ public class teatWGraph_Algo extends teatWGraph_SD {
     }
     @Test
     void WgraphConnected5000(){
-        weighted_graph g = graph_creator(5000,30000,1);
+        weighted_graph g = teatWGraph_SD.graph_creator(5000,30000,1);
         ga = new WGraph_Algo();
         ga.init(g);
         weighted_graph g_c = ga.copy();
@@ -60,7 +61,7 @@ public class teatWGraph_Algo extends teatWGraph_SD {
     }
     @Test
     void WgraphConnected50000(){
-        weighted_graph g = graph_creator(50000,902650,1);
+        weighted_graph g = teatWGraph_SD.graph_creator(50000,902650,1);
         ga = new WGraph_Algo();
         ga.init(g);
         weighted_graph g_c = ga.copy();
