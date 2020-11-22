@@ -1,3 +1,8 @@
+package ex1;
+
+import ex1.node_info;
+import ex1.weighted_graph;
+
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.HashMap;
